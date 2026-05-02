@@ -36,7 +36,7 @@ export default function Experience() {
             </label>
             {
                 isEditing
-                ? <input type="text" id="name" onChange={handleCompanyChange} />
+                ? <input type="text" id="name" value={company} onChange={handleCompanyChange} />
                 : <p>{company}</p>
             }
 
@@ -45,7 +45,7 @@ export default function Experience() {
             </label>
             {
                 isEditing
-                ? <input type="text" id="position" onChange={handlePositionChange} />
+                ? <input type="text" id="position" value={position} onChange={handlePositionChange} />
                 : <p>{position}</p>
             }
             
@@ -54,7 +54,7 @@ export default function Experience() {
             </label>
             {
                 isEditing
-                ? <input type="text" id="responsibilities" onChange={handleResponsibilitiesChange} />
+                ? <input type="text" id="responsibilities" value={responsibilities} onChange={handleResponsibilitiesChange} />
                 : <p>{responsibilities}</p>
             }
 
@@ -64,7 +64,7 @@ export default function Experience() {
             <div className="dates">
                 {
                     isEditing
-                    ? <p>'From' <input type="date" id="workedFrom" onChange={handleWorkedFromChange}/> 'to' <input type="date" id="workedTo" onChange={handleWorkedToChange}/></p>
+                    ? <p>'From' <input type="date" id="workedFrom" value={workedFrom} onChange={handleWorkedFromChange}/> 'to' <input type="date" id="workedTo" value={workedTo} onChange={handleWorkedToChange}/></p>
                     : <p>From {workedFrom} to {workedTo}</p>
                 }
             </div>

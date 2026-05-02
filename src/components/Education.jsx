@@ -31,7 +31,7 @@ export default function Education() {
             </label>
             {
                 isEditing
-                ? <input type="text" id="school" onChange={handleSchoolChange}/>
+                ? <input type="text" id="school" value={school} onChange={handleSchoolChange}/>
                 : <p>{school}</p>
             }
         
@@ -40,7 +40,7 @@ export default function Education() {
             </label>
             {
                 isEditing
-                ? <input type="text" id="title" onChange={handleTitleChange}/>
+                ? <input type="text" id="title" value={title} onChange={handleTitleChange}/>
                 : <p>{title}</p>
             }
             
@@ -50,7 +50,7 @@ export default function Education() {
             <div className="dates">
                 {
                     isEditing
-                    ? <p>'From' <input type="date" id="studiedFrom" onChange={handleStudiedFromChange}/> 'to' <input type="date" id="studiedTo" onChange={handleStudiedToChange}/></p>
+                    ? <p>'From' <input type="date" id="studiedFrom" value={studiedFrom} onChange={handleStudiedFromChange}/> 'to' <input type="date" id="studiedTo" value={studiedTo} onChange={handleStudiedToChange}/></p>
                     : <p>From {studiedFrom} to {studiedTo}</p>
                 }
                 
