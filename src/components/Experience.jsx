@@ -64,8 +64,8 @@ export default function Experience() {
             <div className="dates">
                 {
                     isEditing
-                    ? <p>'From' <input type="date" id="workedFrom" value={workedFrom} onChange={handleWorkedFromChange}/> 'to' <input type="date" id="workedTo" value={workedTo} onChange={handleWorkedToChange}/></p>
-                    : <p>From {workedFrom} to {workedTo}</p>
+                    ? <div>From <input type="date" id="workedFrom" value={workedFrom} onChange={handleWorkedFromChange}/> to <input type="date" id="workedTo" value={workedTo} onChange={handleWorkedToChange}/></div>
+                    : <div>From {workedFrom} to {workedTo}</div>
                 }
             </div>
 

@@ -70,9 +70,20 @@
   padding-left: 0.1rem;
 }
 
-#main p, #main input {
+#main p, #main input, .dates {
   height: auto;
   min-height: 1.7rem;
+}
+
+.dates {
+  border-bottom: solid 1px gray;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.dates input {
+  margin-bottom: 0 !important;
 }
 
 #main button {

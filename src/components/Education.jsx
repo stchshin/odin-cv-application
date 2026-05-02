@@ -50,8 +50,8 @@ export default function Education() {
             <div className="dates">
                 {
                     isEditing
-                    ? <p>'From' <input type="date" id="studiedFrom" value={studiedFrom} onChange={handleStudiedFromChange}/> 'to' <input type="date" id="studiedTo" value={studiedTo} onChange={handleStudiedToChange}/></p>
-                    : <p>From {studiedFrom} to {studiedTo}</p>
+                    ? <div>From <input type="date" id="studiedFrom" value={studiedFrom} onChange={handleStudiedFromChange}/> to <input type="date" id="studiedTo" value={studiedTo} onChange={handleStudiedToChange}/></div>
+                    : <div>From {studiedFrom} to {studiedTo}</div>
                 }
                 
             </div>
