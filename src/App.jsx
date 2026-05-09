@@ -5,11 +5,6 @@ import Education from './components/Education'
 import Experience from './components/Experience'
 
 function App() {
-
-  
-
-  const [school, setSchool] = useState('');
-
   return (
     <>
       <div id="main">
